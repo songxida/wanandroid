@@ -1,0 +1,83 @@
+/* pages/home/index.wxss */
+
+page {
+  background-color: #f4f4f4;
+}
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  display: block;
+  height: 400rpx;
+  width: 100%;
+}
+
+.item-body {
+  position: relative;
+  margin: 16rpx;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 8rpx;
+  box-shadow: 0rpx 6rpx 16rpx gray;
+}
+
+.list-image {
+  float: left;
+  width: 140rpx;
+  height: 227rpx;
+  margin: 16rpx;
+  border-radius: 8rpx;
+}
+
+.item-body text {
+  display: -webkit-box;
+  line-height: 1.5;
+  word-wrap: break-all;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-title-text {
+  -webkit-line-clamp: 1;
+  font-weight: bold;
+  margin-top: 16rpx;
+  margin-right: 16rpx;
+  padding-left: 16rpx;
+  font-size: 32rpx;
+}
+
+.list-desc-text {
+  -webkit-line-clamp: 2;
+  margin-top: 16rpx;
+  margin-right: 16rpx;
+  padding-left: 16rpx;
+  font-size: 24rpx;
+}
+
+.list-sort-text{
+  position: absolute;
+  font-size: 20rpx;
+  color: gray;
+  bottom: 64rpx;
+  left: 190rpx;
+}
+
+.list-author-text{
+  position: absolute;
+  font-size: 20rpx;
+  color: gray;
+  bottom: 16rpx;
+  left: 190rpx;
+}
+
+.list-time-text{
+  position: absolute;
+  font-size: 20rpx;
+  color: gray;
+  bottom: 16rpx;
+  right: 32rpx;
+}

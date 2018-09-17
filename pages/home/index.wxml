@@ -1,0 +1,36 @@
+<!--pages/home/index.wxml-->
+<view>
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style='height:{{scrollViewHeight}}px;' bindscrolltolower="bindLoadMore" bindscrolltoupper="topRefresh" bindscroll="scroll">
+
+    <swiper indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{circular}}' vertical='{{vertical}}' previous-margin='{{previousMargin}}'
+      next-margin='{{nextMargin}}' display-multiple-items='{{display-multiple-items}}'>
+      <block wx:for="{{bannerData}}" wx:for-item="item">
+        <swiper-item>
+          <image src='{{item.imagePath}}' class='img-banner' mode='aspectFill' />
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+    <view class="item-body" wx:for='{{listData}}' wx:for-item="item">
+
+      <image src='{{item.envelopePic == "" ? defaultImg : item.envelopePic}}' class='list-image' mode='aspectFill' lazy-load='true' />
+
+      <text class='list-title-text'>{{item.title}}</text>
+
+      <text class='list-desc-text'>{{item.desc}}</text>
+
+      <text class='list-sort-text'>分类:{{item.superChapterName}}</text>
+
+      <text class='list-author-text'>作者:{{item.author}}</text>
+      <text class='list-time-text'>时间:{{item.niceDate}}</text>
+    </view>
+
+  </scroll-view>
+
+  <view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+      加载中...
+    </loading>
+  </view>
+</view>

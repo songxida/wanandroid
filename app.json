@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/my/index",
+    "pages/study/index",
+    "pages/project/index",
+    "pages/navigation/index",
+    "pages/logs/logs",
+    "pages/listDetail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wanandroid",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "images/icon_home_pager_not_selected.png",
+        "selectedIconPath": "images/icon_home_pager_selected.png"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "text": "知识体系 ",
+        "iconPath": "images/icon_knowledge_hierarchy_not_selected.png",
+        "selectedIconPath": "images/icon_knowledge_hierarchy_selected.png"
+      },
+      {
+        "pagePath": "pages/navigation/index",
+        "text": "导航",
+        "iconPath": "images/icon_navigation_not_selected.png",
+        "selectedIconPath": "images/icon_navigation_selected.png"
+      },
+      {
+        "pagePath": "pages/project/index",
+        "text": "项目",
+        "iconPath": "images/icon_project_not_selected.png",
+        "selectedIconPath": "images/icon_project_selected.png"
+      }
+    ]
+  }
+}
